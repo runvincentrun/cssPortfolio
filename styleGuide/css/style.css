@@ -1,0 +1,177 @@
+* {
+  position: relative;
+}
+
+.max_width {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  position: relative;
+  height: 300px;
+  background-color: #27232f;
+}
+
+.header .icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+}
+
+.content {
+  font-family: "Fjalla One", "Noto Sans TC", sans-serif;
+  padding: 50px;
+}
+
+.content h5 {
+  margin-top: 10px;
+}
+
+.content h1 {
+  font-size: 40px;
+}
+
+.content .title_hr {
+  border: solid 3px #ffb336;
+  width: 100px;
+}
+
+.content h2 {
+  font-size: 30px;
+}
+
+.content h3 {
+  font-size: 20px;
+}
+
+.content h1.small_english {
+  font-size: 24px;
+}
+
+.content h2.small_english {
+  font-size: 16px;
+}
+
+.content h3.small_english {
+  font-size: 12px;
+}
+
+.content .small_english {
+  margin-top: -15px;
+}
+
+.content .button {
+  display: inline-block;
+  padding: 5px 25px;
+  margin-right: 10px;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: bold;
+  border: solid 1px #27232f;
+}
+
+.content .button.button_blue {
+  background-color: #27232f;
+  color: #f3f7f7;
+  font-weight: 500;
+}
+
+.content .button.button_yellow {
+  background: #ffb336;
+  color: #27232f;
+}
+
+.content .color_chip {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.content .color_chip .color_block,
+.content .color_chip .color_tag {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.content .color_chip .color:tag {
+  width: 60px;
+}
+
+.content .color_chip .color_block {
+  width: 35px;
+  height: 35px;
+  border: solid 1px white;
+}
+
+.content .color_chip .color_block_yellow {
+  background-color: #ffb336;
+}
+
+.content .color_chip .color_block_blue {
+  background-color: #27232f;
+}
+
+.content .color_chip .color_block_white {
+  background-color: #f3f7f7;
+}
+
+.content .color_chip .color_block_grey {
+  background-color: #333;
+}
+
+.content_grey {
+  background-color: #333;
+  color: #f3f7f7;
+}
+
+.content_grey .small_english {
+  color: #ffb336;
+}
+
+.content_grey h1,
+.content_grey h2,
+.content_grey h3 {
+  font-weight: 500;
+}
+
+.content_grey .button {
+  border: solid 1px #f3f7f7;
+}
+
+.content_blue {
+  background-color: #27232f;
+  color: #f3f7f7;
+}
+
+.content_blue .small_english {
+  color: #ffb336;
+}
+
+.content_blue h1,
+.content_blue h2,
+.content_blue h3 {
+  font-weight: 500;
+}
+
+.content_blue .button {
+  border: solid 1px #f3f7f7;
+}
+
+.content_white {
+  background-color: #f3f7f7;
+  color: #27232f;
+}
+
+.content_white .small_english {
+  color: #27232f;
+}
+/*# sourceMappingURL=style.css.map */

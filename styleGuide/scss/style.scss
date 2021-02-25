@@ -1,0 +1,161 @@
+$color_yellow: #ffb336;
+$color_blue: #27232f;
+$color_white: #f3f7f7;
+$color_grey: #333;
+
+$font-base_size: 10px;
+$max_content_width: 768px;
+
+* {
+  //   border: solid 1px;
+  position: relative;
+}
+
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
+}
+.max_width {
+  max-width: $max_content_width;
+  margin: 0 auto;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+.header {
+  position: relative;
+  height: 300px;
+  background-color: $color_blue;
+  & .icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+  }
+}
+.content {
+  font-family: "Fjalla One", "Noto Sans TC", sans-serif;
+  padding: 50px;
+  & h5 {
+    margin-top: 10px;
+  }
+
+  & h1 {
+    font-size: $font-base_size * 4;
+  }
+  & .title_hr {
+    border: solid 3px $color_yellow;
+    width: 100px;
+  }
+  & h2 {
+    font-size: $font-base_size * 3;
+  }
+  & h3 {
+    font-size: $font-base_size * 2;
+  }
+
+  & h1.small_english {
+    font-size: $font-base_size * 2.4;
+  }
+  & h2.small_english {
+    font-size: $font-base_size * 1.6;
+  }
+  & h3.small_english {
+    font-size: $font-base_size * 1.2;
+  }
+  & .small_english {
+    margin-top: -15px;
+  }
+  //   按钮
+  & .button {
+    display: inline-block;
+    padding: 5px 25px;
+    margin-right: 10px;
+    letter-spacing: 2px;
+    font-size: $font-base_size * 1.5;
+    font-weight: bold;
+    border: solid 1px $color_blue;
+
+    &.button_blue {
+      background-color: $color_blue;
+      color: $color_white;
+      font-weight: 500;
+    }
+    &.button_yellow {
+      background: $color_yellow;
+      color: $color_blue;
+    }
+  }
+
+  & .color_chip {
+    display: inline-block;
+    margin-right: 25px;
+    & .color_block,
+    & .color_tag {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    & .color:tag {
+      width: 60px;
+    }
+    & .color_block {
+      @include size(35px, 35px);
+      border: solid 1px white;
+    }
+    & .color_block_yellow {
+      background-color: $color_yellow;
+    }
+    & .color_block_blue {
+      background-color: $color_blue;
+    }
+    & .color_block_white {
+      background-color: $color_white;
+    }
+    & .color_block_grey {
+      background-color: $color_grey;
+    }
+  }
+}
+
+.content_grey {
+  background-color: $color_grey;
+  color: $color_white;
+  & .small_english {
+    color: $color_yellow;
+  }
+  & h1,
+  & h2,
+  & h3 {
+    font-weight: 500;
+  }
+  & .button {
+    border: solid 1px $color_white;
+  }
+}
+
+.content_blue {
+  background-color: $color_blue;
+  color: $color_white;
+  & .small_english {
+    color: $color_yellow;
+  }
+  & h1,
+  & h2,
+  & h3 {
+    font-weight: 500;
+  }
+  & .button {
+    border: solid 1px $color_white;
+  }
+}
+
+.content_white {
+  background-color: $color_white;
+  color: $color_blue;
+  & .small_english {
+    color: $color_blue;
+  }
+}
